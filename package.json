@@ -1,0 +1,32 @@
+{
+  "name": "wbs_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build --target node ./src/index.html --out-dir ./build --public-url ./",
+    "nw": "nw",
+    "nwbuild": "nwbuild -p osx64,win64 -o ./product ./build/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "nw-builder": "^3.5.7",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "nw": "^0.45.4",
+    "regenerator-runtime": "^0.13.5",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "@vue/component-compiler-utils": "^3.1.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
